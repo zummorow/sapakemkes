@@ -37,53 +37,67 @@
         <label for="" >
           <input type="checkbox">
         </label>
-        <div>
-          <label for="namalengkap">Nama Lengkap</label>
-          <input type="text" id="namalengkap">
-        </div>
-        <div>
-          <label for="entitas">Pilih Entitas</label>
-          <select name="entitas" id="entitas">
-            <option value="masyarakat">Masyarakat</option>
-            <option value="organisasi">Organisasi</option>
-          </select>
-        </div>
-        <div>
-          <label for="domisili">Domisili</label>
-          <select name="domisili" id="domisili">
-            <option value="jakarta">DKI Jakarta</option>
-            <option value="jabar">Jawa Barat</option>
-            <option value="jateng">Jawa Tengah</option>
-            <option value="jatim">Jawa Timur</option>
-          </select>
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email">
-        </div>
-        <div>
-          <label for="instansi">Nama Instansi / Kelompok / Pribadi</label>
-          <input type="instansi" name="instansi" id="instansi">
-        </div>
-        <div>
-          <label for="nohp">Nomor Handphone</label>
-          <input type="text" name="nohp" id="nohp">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+          <span class="slider-on"><p>On</p></span>
+          <span class="slider-off"><p>Off</p></span>
+        </label>
+
+        <div class="wrapTopForm">
+          <div>
+            <div>
+              <label for="namalengkap">Nama Lengkap</label>
+              <input type="text" id="namalengkap" class="textbox1">
+            </div>
+            <div>
+              <label for="entitas">Pilih Entitas</label>
+              <select name="entitas" id="entitas" class="textbox1">
+                <option value="masyarakat">Masyarakat</option>
+                <option value="organisasi">Organisasi</option>
+              </select>
+            </div>
+            
+            <div>
+              <label for="domisili">Domisili</label>
+              <select name="domisili" id="domisili" class="textbox1">
+                <option value="jakarta">DKI Jakarta</option>
+                <option value="jabar">Jawa Barat</option>
+                <option value="jateng">Jawa Tengah</option>
+                <option value="jatim">Jawa Timur</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <div>
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" class="textbox1">
+            </div>
+            <div>
+              <label for="instansi">Nama Instansi / Kelompok / Pribadi</label>
+              <input type="instansi" name="instansi" id="instansi" class="textbox1">
+            </div>
+            <div>
+              <label for="nohp">Nomor Handphone</label>
+              <input type="text" name="nohp" id="nohp" class="textbox1">
+            </div>
+          </div>
         </div>
         <div>
           <label for="uraian">Tuliskan Uraian Anda</label>
-          <textarea name="uraian" id="uraian" cols="30" rows="10"></textarea>
+          <textarea name="uraian" id="uraian" cols="30" rows="10" class="textbox2"></textarea>
         </div>
         <div>
           <label for="lampiran">Lampirkan Dokumen (Bila ada)</label>
-          <input type="file" id="lampiran" name="lampiran"/>
+          <input type="file" id="lampiran" name="lampiran" />
         </div>
         <div>
-          <input type="submit" value="Kirim">
+          <button class="button1"><span>Kirim</span></button>
         </div>
 
       </form>
     </section>
-    <section id="3">
+    <section id="3" style="background-color: #F2F4F6;">
       <div>
         <h2>Lacak Status Laporanmu</h2>
         <div>

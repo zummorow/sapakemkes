@@ -1,6 +1,7 @@
 *{
     display: flex;
     flex-direction: column;
+    font-family: poppins;
 }
 
 body {
@@ -32,13 +33,171 @@ body {
 h1 {
     font-size: 40px;
     color: #00214D;
-    font-family: poppins;
     font-weight: bold;
 }
 
 p {
     font-size: 24px;
-    font-weight:normal
+    font-weight:normal;
     color: #1B2D45;
-    font-family: poppins;
 }
+
+h2{
+    font-size: 40px;
+    color: #00214D;
+    font-weight: normal;
+}
+
+/* slider css */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .slider-on, .slider-off {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    font-size: 12px; /* Adjust font size as needed */
+    color: #fff; /* Adjust text color as needed */
+  }
+
+  .slider-on {
+    /* Initially hide the "On" text */
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider .slider-on {
+    opacity: 1;
+    /* Slide the "On" text to the right */
+    transform: translateX(26px);
+    transition: transform 0.4s;
+  }
+
+  .wrapTopForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .textbox1{
+    background-color: #F2F4F6;
+    width: 550px;
+    height: 60px;
+    border-style: none;
+    border-radius: 10px;
+    
+
+  }
+
+  .textbox2{
+    background-color: #F2F4F6;
+    width: 1120px;
+    height: 124px;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .textbox3{
+    background-color: #F2F4F6;
+    width: 1120px;
+    height: 64px;
+    border-style: none;
+    border-radius: 10px;
+  }
+
+  .button1{
+    width: 191px;
+    height: 58px;
+    border-radius: 10px;
+    background-color: #16B3AC;
+    border-style: none;
+    color: #fff;
+    margin: 10px 0px;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* button file style */
+  input[type=file]{
+    background-color: #F2F4F6;
+    border-radius: 10px;
+    width: fit-content;
+  }
+
+  input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #16B3AC;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+
+  input[type=file]::file-selector-button:hover {
+    background: #0e9790;
+  }
+
+  
+
+  
